@@ -1,0 +1,71 @@
+.chefContainer{
+    padding: 2rem 6%;
+}
+.chefContainer h3{
+    text-align: center;
+}
+.chefContainer .chefs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    align-items: center;
+ gap:3rem 1rem;
+    justify-content: center;
+}
+.chefContainer .chefs .chef{
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+.chefContainer .chefs .chef .image{
+    height: 35rem;
+
+    width: 34.2rem;
+        position: relative;
+    overflow: hidden; 
+}
+.chefContainer .chefs .chef .image img{
+    height: 35rem;
+    width: 34.2rem;
+object-fit: cover !important;
+}
+.chefContainer .chefs .chef:hover .image .slideContent{
+       top:0;
+}
+.chefContainer .chefs .chef .image .slideContent{
+    background: rgba(0,0,0,.6);
+    position: absolute;
+ top:120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 100%;
+    transition: all 1s ease;
+    flex-direction: column;
+    color:white;
+    z-index: 100;
+}
+
+.chefContainer .chefs .chef .image .slideContent .icons *{
+    font-size: 4rem;
+    margin: 1rem 1rem 1rem;
+    cursor: pointer;
+}
+.chefContainer .chefs .chef .image .slideContent .icons *:hover{
+    color: rgb(255, 0, 0);
+    transition:all 1s ease;
+}
+.chefContainer .chefs .chef .content{
+    padding: 2rem 0;
+text-align: center;
+}
+.chefContainer .chefs .chef .content p{
+    color:var(--secondary-color);
+    padding: 1rem 0;
+}
+.chefContainer .chefs .chef .content .btn{
+    font-size:1.8rem;
+    width: 13rem;
+    border: none;
+    height: 4rem;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,83 @@
+
+/* menu */
+.ourMenu{
+    padding:2rem 0;
+    text-align: center;
+    overflow: hidden;
+    }
+    .ourMenu .foodies{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 2rem 0;
+        justify-content: center;
+        gap:2rem;
+    }
+    .ourMenu .food:hover{
+        box-shadow: 0px 0px 8px rgba(0,0,0,.4);
+        transition: all 2s ease !important;
+    }
+    
+    .ourMenu .food:hover .icons.icon1{
+        left: 2rem !important;
+        transition: all .5s ease;
+    }
+    .ourMenu .foodies .food:hover .icons.icon2{
+       transition: all .5s ease;
+       right: 2rem;
+    }
+        
+    
+    .ourMenu .foodies .food{
+       padding: 1rem;
+       background: rgba(0,0,0,.1);
+       position: relative !important;
+       overflow: hidden;
+       border-radius: .5rem;
+    }
+    .ourMenu .foodies .food .icons{
+        font-size: 2rem;
+        line-height: 4rem;
+        position: absolute;
+        width: 4rem;
+        text-align: center;
+        border-radius: 100%;
+        top: 1.5rem;
+        cursor: pointer;
+        background: rgb(51, 51, 51,.5);
+    }
+    .ourMenu .foodies .food .icons:hover{
+        background: var(--secondary-color);
+        color:var(--primary-color);
+    }
+    .ourMenu .foodies .food .icons.icon1{
+        left: -4rem;
+    }
+    .ourMenu .foodies .food .icons.icon2{
+        right: -4rem;
+    }
+    .ourMenu .foodies .food img{
+        height: 20rem;
+        width: 25rem;
+        cursor: pointer;
+        background: white;
+    }
+    .ourMenu .foodies .food:hover img{
+        transition: all 2s ease;
+        transform: scale(1.03);
+    }
+    .ourMenu .foodies .food .content{
+        padding: 2rem 0 1rem;
+    }
+    .ourMenu .foodies .food .content p{
+        padding: 1rem 0 0rem;
+        font-size: 2.4rem;
+        color:var(--secondary-color);
+    }
+    .ourMenu .foodies .food .content .btn{
+        width: 13rem;
+        height: 4rem;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        margin: 1rem 0 0.5rem;
+    }
